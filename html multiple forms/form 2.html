@@ -7,50 +7,59 @@
 </head>
 <body>
 
-    <h1>Job Application</h1>
-    <br>
+    <form>
 
-    <label for="name">Name</label>
+         <h1>Job Application</h1>
+    
+
+    <label for="name">Name:</label>
     <br>
     <br>
     <input type="text" id="name">
     <br>
-    <label for="email">Email</label>
+    <label for="email">Email:</label>
     <br>
     <br>
     <input type="email" id="email">
     <br>
-    <label for="phone">Phone</label>
+    <label for="phone">Phone:</label>
     <br>
     <br>
     <input type="tel" id="phone">
     <br>
 
 
-    <label for="phone">Phone</label>
+    <label for="resume">Resume:</label>
     <br>
-    <button>Choose file</button>
+    <br>
+    <input type="file" id="resume">
     <br>
     <label for="years">Experience (years):</label>
     <br>
-    <input type="number" id="years">
+    <br>
+    <input type="number" id="years" min="0" max="50">
 
 
-    <fieldset name="Skills:">
+    <fieldset>
+        
+        <legend>Skills:</legend>
 
         <input type="checkbox" id="html">
         <br>
         <label for="html">HTML</label>
         <br>
+        <br>
         <input type="checkbox" id="css">
         <br>
         <label for="css">CSS</label>
+        <br>
         <br>
         <input type="checkbox" id="javascript">
         <br>
         <label for="javascript">JavaScript</label>
         <br>
-
+        <br>
+        
     </fieldset>
 
 
@@ -59,18 +68,25 @@
     <br>
     <select name="School" id="school">
 
+        <option value="High School" id="high">High School</option>
+        <option value="Associate's Degree" id="Associate's">Associate's Degree</option>
+        <option value="bachelor's Degree" id="bachelor's">bachelor's Degree</option>
+        <option value="Master's Degree" id="Master's">Master's Degree</option>
+        <option value="PhD" id="PhD">PhD</option>
+
     </select>
+    <br>
 
 
     <label for="availability">Availability</label>
     <br>
     <br>
-    <input type="checkbox" id="full">
+    <input type="radio" id="full" name="radio">
     <br>
     <label for="full">Full-time</label>
     <br>
     <br>
-   <input type="checkbox" id="part">
+   <input type="radio" id="part" name="radio">
     <br>
     <label for="part">Part-time</label>
     <br>
@@ -82,11 +98,7 @@
     <br>
     <textarea name="Comments" id="comments" rows="3" cols="50"></textarea>
     
-
-    
-
-
-
-
+    <input type="submit" value="Submit Application">
+    </form>
 </body>
 </html>
