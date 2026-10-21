@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        img{
+            margin: 15px;
+            /* position: relative; */
+            /* position:absolute; */
+            /* top: 20px; */
+        }
+
+        .image3{
+            position: fixed;
+            top: 0px;
+            z-index: 100;
+        }    
+        
+        .image2{
+            position: sticky;
+            top: 80px;
+        }    
+
+        .container {
+            position:relative;
+            height: 2000px;
+            background-color:blue;
+        }
+
+        .box {
+            background-color:aqua;
+            height: 5000px;
+        }
+
+ div {
+    border: 7px solid;
+    border-image: linear-gradient(
+        45deg,
+        cyan,
+        blue,
+        purple,
+        magenta,
+        orange,
+        yellow,
+        lime,
+        cyan
+    ) 1;
+
+    box-sizing: border-box;
+    /* background: black; */
+
+    /* position:static; */
+    position: relative;
+
+}
+
+body {
+    /* background-color: black; */
+    background-image:
+        radial-gradient(circle at 20% 30%, purple, transparent 25%),
+        radial-gradient(circle at 80% 30%, blue, transparent 25%),
+        radial-gradient(circle at 50% 80%, cyan, transparent 25%);
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <img src="sup1.jpg"
+        alt="poster 1"
+        width="400px"
+        height="650px"        
+        >
+        <img class="image2"
+        src="sup2.jpg"
+        alt="poster 2"
+        width="400px"
+        height="650px"       
+        >
+        <img class="image3"
+        src="sup3.jpg"
+        alt="poster 3"
+        width="400px"
+        height="650px"        
+        >
+
+    </div>
+
+    <div class="box">
+
+
+    </div>
+</body>
+</html>
