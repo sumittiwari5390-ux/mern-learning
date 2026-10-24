@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            background-color: #f0f0f0;
+            border: 5px solid black;
+            height: 700px;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            width: 320px;
+            height: 320px;
+            padding: 10px;
+            margin: 5px;
+            background-color: blue;
+            color: white;
+            border: 5px solid green;
+            overflow: hidden;
+        }
+        .box img {
+            width: 80px;        /* Reduced image width */
+            height: 80px;       /* Reduced image height */
+            object-fit: cover;  /* Keeps image proportions without stretching */
+            display: block;
+            margin: 0 auto;     /* Centers the small image horizontally */
+        }
+        .box h1 {
+            font-size: 20px;
+            margin: 8px 0;
+            text-align: center;
+        }
+        .box p {
+            font-size: 13px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="sup2.jpg" alt="Image">
+            <h1>Welcome to My Website</h1>
+            <p>
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
