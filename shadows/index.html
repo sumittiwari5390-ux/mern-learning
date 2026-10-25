@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
+    <style> 
+        #head1 {
+            color: var(--main-color);
+            text-align: center;
+            text-shadow: 2px 2px 5px;
+            /* text-shadow: 2px 2px 5px yellow; */
+        }
+        *{
             box-sizing: border-box;
+        }
+        :root {
+            --main-color: brown;
+            --main-width: 300px;
         }
         .container {
             display: flex;
@@ -17,38 +27,35 @@
             align-items: center;
         }
         .box {
-            width: 320px;
-            height: 320px;
+            width: 500px;
+            height: 500px;
             padding: 10px;
             margin: 5px;
             background-color: blue;
-            color: white;
             border: 5px solid green;
-            overflow: hidden;
+            /* box-shadow: 10px 15px brown */
+            /* box-shadow: -10px -15px brown */
+            /* box-shadow: 10px 15px 10px brown */
+            /* box-shadow: 10px 15px 10px 30px brown; */
+            /* box-shadow: 10px 15px 10px 30px inset brown; */
+            box-shadow: 10px 15px 10px 30px var(--main-color),-10px -15px var(--main-color);
         }
         .box img {
-            width: 80px;        /* Reduced image width */
-            height: 80px;       /* Reduced image height */
-            object-fit: cover;  /* Keeps image proportions without stretching */
             display: block;
-            margin: 0 auto;     /* Centers the small image horizontally */
+            width: var(--main-width);
+            height:300px;
+            margin: 0 auto;
         }
-        .box h1 {
-            font-size: 20px;
-            margin: 8px 0;
-            text-align: center;
-        }
-        .box p {
-            font-size: 13px;
-            margin: 0;
-        }
+
+        
+        
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
             <img src="sup2.jpg" alt="Image">
-            <h1>Welcome to My Website</h1>
+            <h1 id="head1">Welcome to My Website</h1>
             <p>
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
