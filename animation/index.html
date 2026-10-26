@@ -29,12 +29,15 @@
         border-radius: 10px;
         border: 3px solid darkblue;
         position: relative;
-        animation-name: rightmovement;
-        animation-duration: 5s;
-        animation-iteration-count: 4;
-        animation-delay: 2s;
+        /* animation-duration: 5s;
         animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
         animation-direction: alternate;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        animation-name: rightmovement; */
+        animation: 5s linear 2s 1 alternate both running rightmovement;
     }
 
     @keyframes rightmovement {
@@ -45,7 +48,32 @@
 
         to{
             top: 0;
-            left: 1200px;
+            left: 1480px;
+        }
+
+    }
+
+    #box2 {
+        width: 300px;
+        height: 100px;
+        background-color: skyblue;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 3px solid darkblue;
+        position: relative;
+        animation: 5s linear 2s 1 alternate both running leftmovement;
+    }
+
+    @keyframes leftmovement {
+        from {
+            top: 600px;
+            left: 1480px;
+        }
+
+        to{
+            top: 600px;
+            left: 0px;
         }
 
     }
@@ -55,6 +83,9 @@
     
     <div class="container">
         <div class="box">
+            
+        </div>
+        <div id="box2">
 
         </div>
     </div>
